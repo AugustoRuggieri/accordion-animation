@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.accordion {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 120px;
+  background-color: #f7f7f7;
+}
+
+.expand-btn {
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.accordion-content.is-open {
+  height: 50vh;
+}
